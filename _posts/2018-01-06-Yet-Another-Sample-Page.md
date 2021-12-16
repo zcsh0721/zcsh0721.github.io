@@ -1,6 +1,8 @@
 ---
 title: Yet Another Sample Page
 published: true
+category: [cat1,cat2]
+tags: ['zsh-java']
 ---
 
 Text can be **bold**, _italic_, ~~strikethrough~~ or `keyword`.
