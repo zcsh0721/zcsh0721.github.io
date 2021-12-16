@@ -1,5 +1,5 @@
 ---
-title: Yet Another Sample Page6
+title: Yet Another Sample Page7
 published: true
 category: [cat1,cat2]
 tags: ['zsh-java']

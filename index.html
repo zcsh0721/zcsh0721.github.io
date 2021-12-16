@@ -18,9 +18,8 @@ layout: default
   {% capture tagnamesize %}
     {{ tagitems[2] }}
   {% endcapture %}
-  <a href="/tag/{{ tagname }}"><code class="highligher-rouge"><nobr>{{ tagname }} {{tagnamesize}}</nobr></code></a>
+  <a href="/tag/{{ tagname }}"><code class="highligher-rouge"><nobr>{{ tagname }}({{tagnamesize}})</nobr></code></a>
 {% endfor %}
-
 
 
 <ul>
