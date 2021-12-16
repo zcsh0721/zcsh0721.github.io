@@ -2,11 +2,27 @@
 layout: default
 ---
 
-<ul>
+{% capture temptags %}
   {% for tag in site.tags %}
-  {{ tag[0] | escape }}({{ tag[1].size }})
+      {{ tag[1].size | plus: 1000 }}#{{ tag[0] }}#{{ tag[1].size }}
   {% endfor %}
-</ul>
+{% endcapture %}
+
+{% assign sortedtemptags = temptags | split:' ' | sort | reverse %}
+
+{% for temptag in sortedtemptags %}
+  {% assign tagitems = temptag | split: '#' %}
+  {% capture tagname %}
+    {{ tagitems[1] }}
+  {% endcapture %}
+  {% capture tagnamesize %}
+    {{ tagitems[2] }}
+  {% endcapture %}
+  <a href="/tag/{{ tagname }}"><code class="highligher-rouge"><nobr>{{ tagname }} {{tagnamesize}}</nobr></code></a>
+{% endfor %}
+
+
+
 <ul>
     {% for post in paginator.posts %}
       <li>
