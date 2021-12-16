@@ -1,5 +1,5 @@
 ---
-title: 虚拟环境 venv
+title: python-venv(虚拟环境)
 published: true
 tags: ['python-study']
 ---
