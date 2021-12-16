@@ -1,5 +1,6 @@
 <h2>Archive</h2>
 {% capture temptags %}
   {% for tag in site.tags %}
-      <a href="/tag/{{ tag[0] }}"><code class="highligher-rouge"><nobr> {{ tag[0] | escape }}({{ tag[1].size })}</nobr></code></a>
+      <a href="/tag/{{ tag[0] }}"><code class="highligher-rouge"><nobr> {{ tag[0] | escape }}({{ tag[1].size }})</nobr></code></a>
   {% endfor %}
+{% endcapture %}
